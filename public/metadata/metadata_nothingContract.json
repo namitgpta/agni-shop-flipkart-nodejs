@@ -1,0 +1,31 @@
+{
+    "attributes": [
+        {
+            "trait_type": "Warranty Period",
+            "value": "1 Year"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Decaying NFT"
+        },
+        {
+            "trait_type": "Issued by",
+            "value": "AgniShop"
+        },
+        {
+            "trait_type": "Repair & Replacement",
+            "value": "Free"
+        },
+        {
+            "trait_type": "Authenticity",
+            "value": "Digital"
+        },
+        {
+            "trait_type": "Brand",
+            "value": "Nothing"
+        }
+    ],
+    "description": "Budget Flagship by Nothing.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmXojkxewYnPukaUDYZhRoofwkqMLg7JZzwXhkMApZRUmg",
+    "name": "Nothing Phone"
+}

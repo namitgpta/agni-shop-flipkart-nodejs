@@ -1,0 +1,5 @@
+To run this Project:
+1. Install the necessary dependencies listed in package.json using: npm i
+2. Run the node app using: nodemon
+
+(Make sure you already have Metamask extension in your browser.)

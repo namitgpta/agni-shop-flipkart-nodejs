@@ -1,0 +1,31 @@
+{
+    "attributes": [
+        {
+            "trait_type": "Warranty Period",
+            "value": "3 Years"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Decaying NFT"
+        },
+        {
+            "trait_type": "Issued by",
+            "value": "AgniShop"
+        },
+        {
+            "trait_type": "Repair & Replacement",
+            "value": "Free"
+        },
+        {
+            "trait_type": "Authenticity",
+            "value": "Digital"
+        },
+        {
+            "trait_type": "Brand",
+            "value": "Sony"
+        }
+    ],
+    "description": "Hands-free, Hands-on Music Experience. Best Class Premium Sony Product.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmceULtvFK3raYiqhMVGDemfZM6aLSiDqLnLKDPbhrphHP",
+    "name": "Sony Headphones"
+}

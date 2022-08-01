@@ -1,0 +1,31 @@
+{
+    "attributes": [
+        {
+            "trait_type": "Warranty Period",
+            "value": "3 Year"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Decaying NFT"
+        },
+        {
+            "trait_type": "Issued by",
+            "value": "AgniShop"
+        },
+        {
+            "trait_type": "Repair & Replacement",
+            "value": "Free"
+        },
+        {
+            "trait_type": "Authenticity",
+            "value": "Digital"
+        },
+        {
+            "trait_type": "Brand",
+            "value": "Apple"
+        }
+    ],
+    "description": "The Apple M1 chip gives the 13-inch MacBook Pro speed and power beyond belief.",
+    "image": "https://gateway.pinata.cloud/ipfs/Qmd79wfZAE7PcwgrkTedZxsKcPh3oAFPmsdHVoaNCix6tn",
+    "name": "Apple MacBook M1 Pro"
+}

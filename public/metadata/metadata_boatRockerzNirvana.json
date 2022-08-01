@@ -1,0 +1,31 @@
+{
+    "attributes": [
+        {
+            "trait_type": "Warranty Period",
+            "value": "2 Years"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Decaying NFT"
+        },
+        {
+            "trait_type": "Issued by",
+            "value": "AgniShop"
+        },
+        {
+            "trait_type": "Repair & Replacement",
+            "value": "Free"
+        },
+        {
+            "trait_type": "Authenticity",
+            "value": "Digital"
+        },
+        {
+            "trait_type": "Brand",
+            "value": "Boat"
+        }
+    ],
+    "description": "Hands-full, Hands-off Music Experience by Boat.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmeqCU8Bb8UpjSABTje2p2GjDoMKsRG7Rawy1a31GxoQQN",
+    "name": "Boat Rockerz Nirvana"
+}

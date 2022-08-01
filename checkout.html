@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/moralis@0.0.184/dist/moralis.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AaNWu6Zs3xbFZiZhw2OB8Amst6-jUdcoTpeIMsgCowPUSlZlNsfMTaDGZmalpVNjQ-iBOgm-pOpxwCyT&currency=USD"></script>
+
+    <script src="scripts/checkout.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Checkout Product</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4 class="mb-3">Billing Info</h4>
+        <form novalidate>
+            <div class="row g-3">
+                <div class="row g-3 col-sm-6 text-center" id="div_img">
+
+                </div>
+                <div class="row g-3 col-sm-6">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" name="" id="firstName" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" name="" id="lastName" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="invalid-feedback">
+                            Valid email is required.
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="address" class="form-label">Address</label>
+                        <div class="input-group">
+                            <input type="text" id="address" class="form-control" placeholder="Vellore, India" required>
+                        </div>
+                        <div class="invalid-feedback">
+                            Valid address is required.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="phone" class="form-label">Phone</label>
+                        <div class="input-group">
+                            <input type="text" id="phone" class="form-control" required>
+                        </div>
+                        <div class="invalid-feedback">
+                            Valid phone no is required.
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="amount">Amount:</label>
+                        <div class="input-group">
+                            <input type="number" id="amount" name="amount" class="form-control" value=0 disabled>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4>Payment</h4>
+                    <br>
+
+                    <div>
+                        <div class="form-check col-sm-6">
+                            <input type="radio" name="paymentMethod" id="paypal" class="form-check-input" checked
+                                required>
+                            <label for="paypal" class="form-check-label">PayPal</label>
+
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="scripts/abiArray.js"></script> -->
+    <script src="scripts/product_data.js"></script>
+</body>
+
+</html>

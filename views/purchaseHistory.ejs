@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase History</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesPurchaseHistory.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div>
+                <h1 class="mb-3">Purchase History</h1>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    User ID:
+                    <%= currentUserEthAddress %>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div>
+            <button id="login_button" type='button' class='btn btn-primary btn-lg'>🦊Login with
+                MetaMask</button>
+            <button id="logout_button" type='button' class='btn btn-primary btn-lg'>Logout</button>
+        </div> -->
+        <div class="main_content">
+            <% let ownershipLink %>
+                <% if(purchasesArr.length==0){ %>
+                    <div class="card">
+                        <div class="card_header">
+                            <h1>No Transaction Yet !!!</h1>
+                        </div>
+                    </div>
+                    <% }else{ %>
+                        <% purchasesArr.forEach((purchase)=>{ %>
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src=<%=productsData[purchase.productId - 1].image %> />
+                                </div>
+                                <div class="card_header">
+                                    <h2>
+                                        <%= productsData[purchase.productId - 1].name %>
+                                    </h2>
+                                    <p>Date of Purchase: <%= purchase.dateOfPurchase %>
+                                    </p>
+                                    <p>Buyer Name: <%= purchase.firstname %>
+                                    </p>
+                                    <p>Order No. <%= purchase.soldQty %>
+                                    </p>
+                                    <% ownershipLink="https://testnets.opensea.io/assets/rinkeby/" +
+                                        purchase.contractAddress+"/"+purchase.soldQty %>
+                                        <a href=<%=ownershipLink %> target="_blank">Ownership Link
+                                        </a>
+                                        <p class="price">
+                                            <%= productsData[purchase.productId-1].price %><span>Rs<span>
+                                        </p>
+                                </div>
+                            </div>
+                            <% }) %>
+                                <% } %>
+        </div>
+
+        <div class="footer">
+            <p>&copy Copyright 2022 Agniveers</p>
+        </div>
+    </div>
+
+
+    <!-- <script src="../scripts/product_data.js"></script> -->
+</body>
+
+</html>
